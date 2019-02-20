@@ -1,0 +1,98 @@
+/*
+* Theme Name    :     Elite Corp
+* Code Author   :     Eslam Khalaf
+* PSD Designer  :     https://www.behance.net/mahdinoyond90d
+*/
+
+:root{
+  --primary-color: #08526d;
+  --secondary-color: #ec1c23;
+}
+
+/* Start Upper Bar */
+.upper-bar{
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.upper-bar .btn-sm{font-size: 0.8rem; cursor: pointer;}
+
+/* End Upper Bar */
+
+/* Start Navbar */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link{
+  color : var(--primary-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{color: var(--secondary-color)}
+
+.navbar-light .navbar-brand{
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.navbar-light .navbar-brand > span {
+  color : var(--secondary-color);
+  font-weight: 300
+}
+
+.navbar-light .navbar-nav .nav-link.active{color: var(--secondary-color)}
+/* End Navbar */
+
+/* Start Slider */
+.slider{
+  /* height: calc(100vh - 118px); */
+  overflow: hidden;
+}
+
+.carousel-item:first-child{background: url('../assets/slider-1.jpeg') no-repeat center center/cover}
+.carousel-item{background: url('../assets/slider-2.jpeg') no-repeat center center/cover}
+.carousel-item:last-child{background: url('../assets/slider-3.jpeg') no-repeat center center/cover}
+
+.carousel-inner{position: relative;}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+}
+
+.overlay .content p > span{
+  background: var(--secondary-color);
+  display: inline-block;
+}
+/* End Slider */
+
+
+
+
+/* Media Queries */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .overlay .content p {
+    font-size: 3rem;
+    line-height: 1.5
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+}
