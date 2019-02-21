@@ -90,6 +90,49 @@
 
 /* End Company overview */
 
+/* start Work */
+
+#work ul li{
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;;
+  margin-right: 10px;
+  padding: 10px 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#work ul li.active,
+#work ul li:hover{
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
+
+#work .work-imgs .img{
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#work .work-imgs .img img{
+  width: 100%;
+  height: 100%;
+}
+
+#work .work-imgs .col-md,
+#work .work-imgs .col-sm-6{padding: 0}
+
+/* End Work */
 
 
 
@@ -97,7 +140,10 @@
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) { 
-
+  #work ul li{
+    margin: 5px;
+    padding: 10px 20px;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -105,6 +151,10 @@
   .overlay .content p {
     font-size: 3rem;
     line-height: 1.5
+  }
+  #work ul li{
+    padding: 5px 2px;
+    font-size: 0.8rem; 
   }
 }
 
