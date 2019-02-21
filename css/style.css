@@ -84,6 +84,12 @@
 
 /* End Features */
 
+/* Start Company overview */
+.company-overview{background: #f0f5f7}
+.company-overview .btn-danger{background: var(--secondary-color); border-color: var(--secondary-color);}
+
+/* End Company overview */
+
 
 
 
