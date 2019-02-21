@@ -1,4 +1,7 @@
 // Adjust Slider Height
+let firstElement = document.querySelectorAll('.carousel-item')[0],
+    secondElement = document.querySelectorAll('.carousel-item')[1],
+    thirdElement = document.querySelectorAll('.carousel-item')[2];
 
 let windowHeight = window.innerHeight,
     upperNavHeight = document.querySelector('.upper-bar').clientHeight,
@@ -6,9 +9,9 @@ let windowHeight = window.innerHeight,
     actualheight = windowHeight - (upperNavHeight + mainNav);
 
 document.querySelector('.slider').style.height = actualheight + 'px';
-document.querySelectorAll('.carousel-item')[0].style.height = actualheight + 'px';
-document.querySelectorAll('.carousel-item')[1].style.height = actualheight + 'px';
-document.querySelectorAll('.carousel-item')[2].style.height = actualheight + 'px';
+firstElement.style.height = actualheight + 'px';
+secondElement.style.height = actualheight + 'px';
+thirdElement.style.height = actualheight + 'px';
 
 window.addEventListener('resize', () => {
   windowHeight = window.innerHeight;
@@ -16,9 +19,9 @@ window.addEventListener('resize', () => {
   mainNav = document.querySelector('.navbar').clientHeight;
   actualheight = windowHeight - (upperNavHeight + mainNav);
   document.querySelector('.slider').style.height = actualheight + 'px';
-  document.querySelectorAll('.carousel-item')[0].style.height = actualheight + 'px';
-  document.querySelectorAll('.carousel-item')[1].style.height = actualheight + 'px';
-  document.querySelectorAll('.carousel-item')[2].style.height = actualheight + 'px';
+  firstElement.style.height = actualheight + 'px';
+  secondElement.style.height = actualheight + 'px';
+  thirdElement.style.height = actualheight + 'px';
 });
 
 
