@@ -132,7 +132,17 @@
 #work .work-imgs .col-md,
 #work .work-imgs .col-sm-6{padding: 0}
 
+#work div.row{margin: 0}
+
 /* End Work */
+
+/* Start Blog Section */
+#blog img{width: 100%}
+#blog .card{border: none; margin-bottom: 2rem;}
+#blog .card .card-body{padding-left: 0}
+#blog .card .card-body .card-title{color: var(--primary-color); cursor: pointer}
+#blog .card .card-body .card-link{color: var(--secondary-color); font-weight: bold}
+/* End Blog Section */
 
 
 
