@@ -173,6 +173,65 @@
 }
 /* End Testimonials */
 
+/* Start Pricing Plans */
+#plans{background: #f7f7f7; box-sizing: border-box}
+#plans .card{
+  border: none;
+  box-shadow: 0px 0px 10px #00000038;
+}
+
+#plans .card.active{
+  position: relative;
+  bottom: 15px;
+}
+
+#plans .card .card-body .card-title{
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+#plans .card .card-body .card-subtitle {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+#plans .card .card-body .card-text{
+  background: #f7f7f7;
+  color: var(--primary-color);
+
+}
+#plans .card.active .card-body .card-text{
+  background: var(--secondary-color);
+  color: #fff;
+
+}
+
+#plans .card .card-body .card-text span{
+  font-size: 1rem;
+}
+
+#plans .card .card-body .list-group .list-group-item {
+  border: none;
+  color: #777
+}
+#plans .card .card-body .btn {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 5px 40px;
+}
+#plans .card .card-body .btn:hover{
+  background: #bb171c
+}
+
+#plans .card.active .card-body .btn {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 5px 40px;
+}
+#plans .card.active .card-body .btn:hover{
+  background: #063749
+}
+/* End Pricing Plans */
+
 
 
 /* Media Queries */
@@ -195,6 +254,8 @@
     padding: 5px 2px;
     font-size: 0.8rem; 
   }
+
+  #plans .card.active{bottom: 0}
 }
 
 /* // Large devices (desktops, 992px and up) */
