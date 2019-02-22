@@ -232,6 +232,35 @@
 }
 /* End Pricing Plans */
 
+/* Start Choose-us */
+#choose-us .row{
+  background: url('../assets/testimonials.jpg') no-repeat center center/cover;
+  height: 500px;
+  margin: 0
+}
+
+#choose-us .row .content{
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#choose-us .row .content .btn {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 5px 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 1rem 0
+}
+#choose-us .row .content .btn:hover{
+  background: #bb171c
+}
+
+/* End Choose-us */
+
 
 
 /* Media Queries */
