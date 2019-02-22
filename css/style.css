@@ -235,7 +235,6 @@
 /* Start Choose-us */
 #choose-us .row{
   background: url('../assets/testimonials.jpg') no-repeat center center/cover;
-  height: 500px;
   margin: 0
 }
 
@@ -243,6 +242,7 @@
   background-color: var(--primary-color);
   color: #fff;
   height: 100%;
+  min-height: 500px;
   display: flex;
   align-items: center;
 }
@@ -260,6 +260,30 @@
 }
 
 /* End Choose-us */
+
+/* Start Statistics */
+#statistics {
+  color: var(--primary-color);
+}
+
+#statistics p{
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+}
+/* End Statistics */
+
+/* Start Contact */
+#contact{
+  background: var(--secondary-color);
+  padding: 5rem 0;
+}
+
+#contact .btn{
+  color: #fff;
+  border: 1px solid #fff;
+  letter-spacing: 4px;
+}
+/* End Contact */
 
 
 
